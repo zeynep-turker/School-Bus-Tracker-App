@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">school_bus_tracker_app</string>
+    <string name="log_in">LOG IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="school_name">School Name</string>
+    <string name="age">Age</string>
+    <string name="child_name">Child Name</string>
+    <string name="add_child">ADD CHILD</string>
+    <string name="student_name">Student Name</string>
+    <string name="status">Status</string>
+    <string name="call_school">Call School</string>
+    <string name="call_driver">Call Driver</string>
+    <string name="home">HOME</string>
+    <string name="notification">notification</string>
+    <string name="user_profile">user profile</string>
+    <string name="school_bus">school bus</string>
+</resources>

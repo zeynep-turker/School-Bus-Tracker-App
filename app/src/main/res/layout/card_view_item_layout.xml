@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_margin="80dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/profile_page"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/box_two_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/student_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/card_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/age"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintBottom_toTopOf="@+id/school_name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/box_two_text"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/school_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/school_name"
+            app:layout_constraintBottom_toBottomOf="@+id/image"
+            app:layout_constraintBottom_toTopOf="@+id/box_four_text"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/box_four_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/status"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/school_name" />
+
+
+        <Button
+            android:id="@+id/schoolCall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/call_school"
+            android:drawablePadding="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/new_phone_call_icon"
+            app:layout_constraintStart_toEndOf="@+id/card_view"
+            app:layout_constraintTop_toBottomOf="@+id/box_four_text"
+
+            android:drawableStart="@drawable/new_phone_call_icon" />
+        <Button
+            android:id="@+id/driverCall"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/call_driver"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/new_phone_call_icon"
+            app:layout_constraintStart_toEndOf="@+id/schoolCall"
+            app:layout_constraintTop_toBottomOf="@+id/box_four_text"
+
+            android:drawableStart="@drawable/new_phone_call_icon"
+            android:layout_marginStart="10dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
