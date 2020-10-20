@@ -16,9 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".parent.ParentHomePage"/>
+        <activity android:name=".ui.act_parent.ParentHomePage"/>
         <activity android:name=".ui.act_user_management.act_login.LoginPage"/>
         <activity android:name=".ui.act_user_management.UserManagement"/>
+        <activity android:name=".ui.act_user_management.act_register.SignUpPage"/>
+        <activity android:name=".ui.act_student.StudentHomePage"/>
+        <activity android:name=".ui.act_driver.DriverHomePage"/>
     </application>
 
 </manifest>

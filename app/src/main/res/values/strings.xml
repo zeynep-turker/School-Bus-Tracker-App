@@ -4,7 +4,7 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? </string>
     <string name="sign_up">SIGN UP</string>
     <string name="school_name">School Name</string>
     <string name="age">Age</string>
@@ -18,4 +18,18 @@
     <string name="notification">notification</string>
     <string name="user_profile">user profile</string>
     <string name="school_bus">school bus</string>
+    <string name="i_am_a">I am a</string>
+    <string name="driver">Driver</string>
+    <string name="parent">Parent</string>
+    <string name="student">Student</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="address">Address</string>
+    <string name="already_have_on_account_log_in">Already have on account? </string>
+    <string name="log_in_text">Log in</string>
+    <string name="sign_up_text">Sign up</string>
+    <string name="register_service">Register Service</string>
+    <string name="exit">Exit</string>
+    <string name="my_service">My Service</string>
+    <string name="register_requests">Register Requests</string>
+    <string name="students">Students</string>
 </resources>

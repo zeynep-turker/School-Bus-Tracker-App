@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "797260715411",
+    "firebase_url": "https://schoolbustrackerapp.firebaseio.com",
+    "project_id": "schoolbustrackerapp",
+    "storage_bucket": "schoolbustrackerapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797260715411:android:dba604de06f06913778466",
+        "android_client_info": {
+          "package_name": "com.example.school_bus_tracker_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797260715411-u02r3vbteuvcjvmctnkpj25qtaj4q7lr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCplg20q8tZvUEoM7qcjyQE-05xKoos5ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797260715411-u02r3vbteuvcjvmctnkpj25qtaj4q7lr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
