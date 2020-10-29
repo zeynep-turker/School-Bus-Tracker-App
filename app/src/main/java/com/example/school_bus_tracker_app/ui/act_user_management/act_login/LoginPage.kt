@@ -35,8 +35,7 @@ class LoginPage : BaseActivity<UserLoginPageLayoutBinding>() {
             confirmInput()
         }
         binding.signupTextButton.setOnClickListener {
-            val intent = Intent(this, SignUpPage::class.java)
-            startActivity(intent)
+            updateUI<SignUpPage>()
         }
     }
     override fun getLayout() = R.layout.user_login_page_layout

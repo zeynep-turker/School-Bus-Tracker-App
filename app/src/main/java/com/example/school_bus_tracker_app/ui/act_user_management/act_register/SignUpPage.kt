@@ -1,7 +1,5 @@
 package com.example.school_bus_tracker_app.ui.act_user_management.act_register
 
-import StudentModel
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.RadioButton
@@ -11,7 +9,9 @@ import com.example.school_bus_tracker_app.R
 import com.example.school_bus_tracker_app.databinding.UserSignupPageLayoutBinding
 import com.example.school_bus_tracker_app.model.DriverModel
 import com.example.school_bus_tracker_app.model.ParentModel
+import com.example.school_bus_tracker_app.model.StudentModel
 import com.example.school_bus_tracker_app.model.User
+import com.example.school_bus_tracker_app.ui.act_student.StudentHomePage
 import com.example.school_bus_tracker_app.ui.act_user_management.act_login.LoginPage
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -34,8 +34,7 @@ class SignUpPage : BaseActivity<UserSignupPageLayoutBinding>() {
             confirmInput()
         }
         binding.loginTextButton.setOnClickListener {
-            val intent = Intent(this, LoginPage::class.java)
-            startActivity(intent)
+            updateUI<LoginPage>()
         }
 
     }
@@ -143,8 +142,8 @@ class SignUpPage : BaseActivity<UserSignupPageLayoutBinding>() {
 
                     }
                     "Parent" -> {
-                        currentUserDb.child("Children").child("child").setValue(true)
-                }
+                        currentUserDb.child("Children").setValue("true")
+                    }
                     else -> {
                         currentUserDb.child("schoolName").setValue((user as StudentModel).schoolName)
                         currentUserDb.child("status").setValue((user).status)
