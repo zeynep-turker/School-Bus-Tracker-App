@@ -22,6 +22,8 @@
         <activity android:name=".ui.act_user_management.act_register.SignUpPage"/>
         <activity android:name=".ui.act_student.StudentHomePage"/>
         <activity android:name=".ui.act_driver.DriverHomePage"/>
+        <activity android:name=".ui.act_driver.DriverServiceListPage"/>
+        <activity android:name=".ui.act_driver.ServiceDetailPage"/>
     </application>
 
 </manifest>
