@@ -1,1 +1,1 @@
-"# school_bus_tracker_app" 
+This is my graduation project. It is an Android mobile application written in Kotlin. Parents can check whether the students get on the bus, see the service route and examine the status, instantly access the location of the service bus and see the instant location of the student, the service driver can create a service, accept or reject the registration requests from the student, see the home locations and the route to go, students can register for the service and access the instant location of the service.
